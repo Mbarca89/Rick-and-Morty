@@ -1,0 +1,48 @@
+.cardsContainer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    overflow: auto;
+    align-items: center;
+    max-height: 100vh;
+    margin-top: 3%;
+}
+.cartas{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100vh;
+    /* background-color: red; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 32%;
+    position: relative;
+    border: 0;
+    
+    
+}
+@media screen and (max-width: 412px){
+    .cartas{
+        width: 70%;
+        height: auto;
+        overflow: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-left: 15%;
+        max-height: 130vh;
+        margin-bottom: 5%;
+
+    }
+    .cardsContainer{
+        position: relative;
+        width: 100vw;
+        height: 80vh;
+        /* background-color: blue; */
+        overflow: auto;
+        align-items: left;
+        max-height:80vh;
+        margin-bottom: 35%;
+    }
+}
+
