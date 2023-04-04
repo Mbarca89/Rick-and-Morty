@@ -8,8 +8,8 @@
    margin-left: 0px;
    margin-right: 0px;
    background-image: url(./img/Rick-And-Morty-bg.png) ,url(./img/back.png);
-   background-attachment: fixed;
-   background-size: 90vw,90vw;
+   background-attachment: fixed,scroll;
+   background-size: 90vw,50%;
    background-repeat: no-repeat;
    background-position: bottom,center;
    

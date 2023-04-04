@@ -8,7 +8,7 @@
     max-height: 100vh;
     margin-top: 3%;
 }
-.cartas{
+.cards{
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -23,7 +23,7 @@
     
 }
 @media screen and (max-width: 412px){
-    .cartas{
+    .cards{
         width: 70%;
         height: auto;
         overflow: auto;
@@ -32,12 +32,13 @@
         margin-left: 15%;
         max-height: 130vh;
         margin-bottom: 5%;
+        /* background-color: blue; */
 
     }
     .cardsContainer{
         position: relative;
-        width: 100vw;
-        height: 80vh;
+        width: 100%;
+        height: 71vh;
         /* background-color: blue; */
         overflow: auto;
         align-items: left;

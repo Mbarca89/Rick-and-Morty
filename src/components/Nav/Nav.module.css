@@ -1,0 +1,13 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: blue; */
+    align-items: center;
+}
+
+@media screen and (max-width: 412px){
+    .nav{
+        width: 68%;
+    }
+}

@@ -1,4 +1,4 @@
-.tarjeta{
+.card{
     display: flex;
     /* background-color: aqua; */
     background-image: url(../../img/card-background.jpg);
@@ -12,8 +12,13 @@
     height: auto;
     background-size: 150%;
     /* justify-content: space-evenly; */
+    transition: 0.2s;
 }
-.recuadroImagen{
+.card:hover{
+    box-shadow: 0 0 20px 3px #48abe0;
+    
+}
+.imageContainer{
     width: 15vw;
     height: auto;
     margin-top: 1vh;
@@ -24,7 +29,7 @@
     /* background-color: aqua; */
 }
 
-.foto{
+.image{
     display: flex;
     border-radius: 10px;
     width: 15vw;
@@ -32,7 +37,7 @@
     position: relative;
     top: 1vh;
 }
-.nombre{
+.name{
     position: relative;
     left: 0vw;
     bottom: 3vh;
@@ -45,7 +50,7 @@
 }
 
 
-.elementos{
+.elements{
     width: 15vw;
     height: auto;
     margin-top: 1vh;
@@ -68,34 +73,46 @@
 
 
 
-.boton{
+
+.button{
     position: absolute;
     right: 1%;
     top: 3%;
     background-color: #bbe2f3;
     border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    background-color: #bbe2f3;
+    border: none;
+    box-shadow: 0 0 10px 5px #24536d;
+}
+.button:hover{
+    box-shadow: 0 0 10px 5px #48abe0;
+    cursor: pointer;
 }
 @media screen and (max-width: 412px){
-    .tarjeta{
+    .card{
+        width: 90%;
         height: 20vh;
         background-color: aqua;
         background-size: 150%;
         /* background-image: none; */
         margin-right: 1vw;
+        margin-left: 3vw;
         align-items: center;
     }
 
-    .recuadroImagen{
+    .imageContainer{
         width: 30vw;
         height: auto;
         /* background-color: purple; */
         
     }
-    .foto{
+    .image{
         width: 30vw;
     }
 
-    .elementos{
+    .elements{
         /* background-color: blue; */
         width: 30vw;
 
