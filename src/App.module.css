@@ -1,0 +1,34 @@
+.App {
+   text-align: center;
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+   align-items: center;
+   background-color: black;
+   margin-left: 0px;
+   margin-right: 0px;
+   background-image: url(./img/Rick-And-Morty-bg.png) ,url(./img/back.png);
+   background-attachment: fixed,scroll;
+   background-size: 90vw,50%;
+   background-repeat: no-repeat;
+   background-position: 32% 100%,center;
+   overflow: hidden;
+   overflow-y: hidden;   
+}
+
+.searchBar{
+   width: 35%;
+   display: flex;
+   flex-direction: column;
+}
+
+@media screen and (max-width: 412px){
+   .App {
+      background-attachment: fixed;
+      background-size: 100vw;
+      background-position: bottom,center;
+      background-repeat: no-repeat;
+      /* background-color: red; */
+   
+   }
+}

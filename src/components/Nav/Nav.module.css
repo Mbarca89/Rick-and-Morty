@@ -5,6 +5,41 @@
     /* background-color: blue; */
     align-items: center;
 }
+.navBar{
+    width: 30%;
+    display: flex;
+    margin-top: 2vh;
+    margin-right: 20vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+    column-gap: 10%;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 999;
+}
+
+.button{
+    position: relative;
+    left: 6%;
+    border-radius: 10px;
+    margin-top: 1%;
+    width: 15%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #bbe2f3;
+    border: none;
+    box-shadow: 0 0 20px 5px #24536d;
+    transition: .2s;
+    text-decoration: none;
+}
+.button:hover{
+    box-shadow: 0 0 20px 10px #48abe0;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 412px){
     .nav{

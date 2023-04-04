@@ -16,7 +16,6 @@
 }
 .card:hover{
     box-shadow: 0 0 20px 3px #48abe0;
-    
 }
 .imageContainer{
     width: 15vw;
@@ -40,8 +39,8 @@
 .name{
     position: relative;
     left: 0vw;
-    bottom: 3vh;
-    font-size: 10px;
+    margin-top: 1px;
+    font-size: 90%;
     font-weight: bold;
     background-color: rgba(6, 254, 80, 0.5);
     padding-left: .5em;
@@ -49,6 +48,16 @@
     
 }
 
+.link{
+    position: relative;
+    bottom: 10%;
+    height: 10%;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: black;
+    /* background-color: aqua; */
+    
+}
 
 .elements{
     width: 15vw;
@@ -119,5 +128,16 @@
     }
     .h2{
         font-size: 3.5vw;
+    }
+    .link{
+        height: 2vh;
+        bottom: 1vh;
+        font-size: 3vw;
+        
+    }
+    .name{
+        bottom: 5%;
+        
+        
     }
 }

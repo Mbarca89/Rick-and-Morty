@@ -12,8 +12,8 @@ export default function SearchBar({onSearch}) {
       if (event.key === 'Enter'){
          onSearch({id})
          setId('')
-         const element = document.getElementById('cardsContainer')
-         element.scrollTop = element.scrollHeight
+         // const element = document.getElementById('cardsContainer')
+         // element.scrollTop = element.scrollHeight
       }
    }
 

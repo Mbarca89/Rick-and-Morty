@@ -1,0 +1,19 @@
+.about{
+    background-color: rgba(0, 0, 0, 20%);
+    border-radius: 15px;
+    margin-top: 5%;
+    width: 40%;
+}
+
+.h1{
+    font-weight: 1000;
+    margin-top: -6vh;
+    text-shadow: 1px 1px #bbe2f3;
+}
+
+.p{
+    font-weight: bolder;
+    text-align: center;
+    color: #bbe2f3;
+    text-shadow: 1px 2px black;
+}

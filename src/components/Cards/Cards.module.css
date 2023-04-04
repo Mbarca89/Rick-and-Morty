@@ -6,7 +6,7 @@
     overflow: auto;
     align-items: center;
     max-height: 100vh;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 .cards{
     display: flex;
