@@ -1,0 +1,29 @@
+.detailContainer{
+    display: flex;
+    position: relative;
+    width: 40vw;
+    margin-top: 10vh;
+    background-color: rgba(0,0,0,40%);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.img{
+    margin-left: 1vw;
+    margin-top: 1vh;
+    border-radius: 10px;
+}
+
+.h2{
+    font-weight: bolder;
+    text-align: center;
+    color: #bbe2f3;
+    text-shadow: 1px 2px black;
+    margin-top: 4%;
+    font-size: 1.8vw;
+    background-color: rgba(187, 226, 243,40%);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 1vw;
+}

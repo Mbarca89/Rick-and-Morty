@@ -1,10 +1,11 @@
 import style from './Nav.module.css'
 import SearchBar from '../SearchBar/SearchBar.jsx';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useLocation } from 'react-router-dom';
 
-function Nav ({onSearch}) {
-    return(
-        <>
+function Nav ({onSearch,logout}) {
+    const loc = useLocation()
+    return(        
+        loc.pathname !== '/' && <>
         <div className={style.nav}>
         <SearchBar onSearch={onSearch} />
         </div>
@@ -15,9 +16,9 @@ function Nav ({onSearch}) {
         <button className={style.button}>
             <NavLink className={style.link} to='/about'>About</NavLink>
         </button>
-        
+        <button className={style.button} onClick={logout}>Logout</button>
         </div>
-        </>
+       </>
     )
 }
 

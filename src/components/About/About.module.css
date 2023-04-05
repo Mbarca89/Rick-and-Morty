@@ -17,3 +17,9 @@
     color: #bbe2f3;
     text-shadow: 1px 2px black;
 }
+
+.img{
+    position: relative;
+    width: 60%;
+    left: 2%;
+}
