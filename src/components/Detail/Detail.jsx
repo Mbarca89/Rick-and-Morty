@@ -2,14 +2,17 @@ import style from './Detail.module.css'
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from 'axios';
-import background from '../../img/card-background.jpg'
+
+
+const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
+const API_KEY = '5f614b83540e.3e67bff3df889ef5d660';
 
 function Detail () {
 const {id} = useParams();
 const [character,setCharacter] = useState({})
 
 useEffect(() => {
-    axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
+    axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => {
        if (data.name) {
           setCharacter(data);
        } else {

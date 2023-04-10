@@ -6,7 +6,10 @@ import Detail from './components/Detail/Detail';
 import About from './components/About/About';
 import Form from './components/Form/Form'
 import { useState, useEffect } from 'react';
-import { Route, Routes, Navigate, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
+
+const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
+const API_KEY = '5f614b83540e.3e67bff3df889ef5d660';
 
 function App() {
    const [access,setAccess] = useState(false)
@@ -34,11 +37,11 @@ const logout = () =>{
    const [characters,setCharacters] = useState([])
 
    function onClose ({id}) {
-      setCharacters(characters.filter(buscaId => buscaId.id!==parseInt(id,10)))
+      setCharacters(characters.filter(buscaId => buscaId.id!==id))
    }
   
    function onSearch({id}) {      
-      axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
+      axios(`${URL_BASE}/${id}?key=${API_KEY}`).then(({ data }) => {
          let res = true
          characters.forEach(element => {
             if (element.id === data.id) res=false

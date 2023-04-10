@@ -1,19 +1,33 @@
-.container{
+.passContainer{
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 30vw;
-    height: 45vh;
+    height: 20vh;
     /* background-color: red; */
-    margin-top: 30vh;
+    margin-top: 1vh;
     margin-left: auto;
     align-items: center;
 }
+
+.emailContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 30vw;
+    height: 20vh;
+    /* background-color: red; */
+    margin-top: 15vh;
+    margin-left: auto;
+    align-items: center;
+}
+
 .button{
     position: relative;
     padding-left: 1vw;
     padding-right: 4.2vw;
     border-radius: 10px;
-    margin-top: 4vh;
+    margin-top: 0vh;
     width: 5vw;
     height: 5vh;
     font-family: 'Courier New', Courier, monospace;
@@ -32,14 +46,18 @@
 .bar{
     position: relative;
     border-radius: 10px;
-    margin-top: 8vh;
+    margin-top: 5vh;
+    margin-bottom: 0;
     width: 20vw;
-    height: 5vh;
+    height: 4vh;
     font-family: 'Courier New', Courier, monospace;
     background-color: #bbe2f3;
     border: none;
     box-shadow: 0 0 20px 10px #24536d;
     transition: .2s;
+}
+.bar:invalid{
+    background-color: rgb(254, 100, 100);
 }
 
 .bar:focus {
@@ -52,9 +70,28 @@
 .label{
     position: relative;
     bottom: 9vh;
+    margin-top: 0vh;
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
     font-size: 1.3vw;
+}
 
+.validation{
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    bottom: 2vh;
+    color: rgb(254, 100, 100);
+    font-weight: bold;
+    text-shadow: 1px 2px black;
+    /* background-color: red; */
+}
+
+.emailOk{
+    color: green;
+}
+
+.passwordOk{
+    color: green;
 }

@@ -10,30 +10,38 @@ function Form ({login}) {
     })
 
     const [errors, setErrors] = useState({
-        email: '',
-        password: ''
+        email: {
+            email1: '',
+            email2: ''
+        },
+        password: {
+            password1:'',
+            password2:''
+        }
     })
 
     const onChangeHandler = (event) => {
-        // console.log(userData)
-        setUserData({
+         setUserData({
             ...userData,
             [event.target.name]:event.target.value
-        })
-        // console.log(userData)
-        // if(Validations(userData)){
-        // setErrors({
-        //     ...errors,
-        //     email: 'por favor, revisa tu email, rey/reina'
-        // })
+        }) 
+        console.log(userData)      
+        
+        let val = Validations(userData,event.target.name)
 
-        // } else setErrors({...errors, email: ''})
-        // if(Validations(userData)){
-        //     setErrors({
-        //         ...errors,
-        //         password: 'tiene que tener un mínimo de 6 caracteres'
-        //     })
-        // }else setErrors({...errors, password: ''})
+        if(event.target.name === 'email'){
+            setErrors({
+              ...errors,
+              [event.target.name]: val.email
+             })
+        }
+
+        if(event.target.name === 'password'){
+            setErrors({
+                ...errors,
+                password: val.password
+            })
+        }
     }
     
     const handleSubmit = (event) =>{
@@ -41,16 +49,22 @@ function Form ({login}) {
         login(userData)
     }
 
-    return(
+    return (
         <>
         <div >
-            <form className={style.container}>
-                <input className={style.bar} name='email' type="text" value={userData.email} onChange={onChangeHandler}/>
+            <form >
+                <div className={style.emailContainer}>
+                <input className={style.bar} name='email' type="text" value={userData.email} onChange={onChangeHandler} required/>
                 <label className={style.label} htmlFor='email'>Email</label>
-                {errors.email && <p>{errors.email}</p>}
-                <input className={style.bar} name='password' type="text" value={userData.password} onChange={onChangeHandler}/>
+                {errors.email.email1 && <p  className={style.validation}>{errors.email.email1}</p>}
+                {errors.email.email2 && <p  className={style.validation}>{errors.email.email2}</p>}
+                </div>
+                <div className={style.passContainer}>
+                <input className={style.bar} name='password' type="text" value={userData.password} onChange={onChangeHandler} required/>
                 <label className={style.label} htmlFor='password'>Contraseña</label>
-                {errors.password && <p>{errors.password}</p>}
+                {errors.password.password1 && <p className={style.validation}>{errors.password.password1}</p>}
+                {errors.password.password2 && <p className={style.validation}>{errors.password.password2}</p>}
+                </div>
                 <button className={style.button} onClick={handleSubmit} >Submit</button>
             </form>
             </div>
