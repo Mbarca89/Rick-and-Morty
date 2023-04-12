@@ -99,6 +99,25 @@
     box-shadow: 0 0 10px 5px #48abe0;
     cursor: pointer;
 }
+
+.favButton{
+    position: relative;
+    height: 3vh;
+    left: .8vw;
+    top: 3%;
+    background-color: #bbe2f3;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    background-color: #bbe2f3;
+    border: none;
+    box-shadow: 0 0 10px 5px #24536d;
+}
+.favButton:hover{
+    box-shadow: 0 0 10px 5px #48abe0;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 412px){
     .card{
         width: 90%;

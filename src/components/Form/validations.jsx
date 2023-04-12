@@ -1,5 +1,5 @@
 const Validations = (userData, eventName) => {
-    
+    console.log(userData)
     let res = {
         email: {
             email1: '',
@@ -37,7 +37,7 @@ const Validations = (userData, eventName) => {
             res.password.password1 = ''
         }
    
-        if(!/\d/.test(userData.password)){
+        if(!/[0-9]/.test(userData.password)){
             res.password.password2 = 'La contraseña debe tener un numero'
             }
 

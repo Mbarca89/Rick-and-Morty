@@ -1,0 +1,49 @@
+.cardsContainer{
+    position: static;
+    width: 100vw;
+    /* height: 80vh; */
+    /* background-color: red; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    /* max-height: 78vh; */
+    margin-top: 10%;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 30%;
+    /* background-color: red; */
+    margin-top: 0%;
+    margin-left: 32%;
+    position: relative;
+    border: 0;
+    
+    
+}
+@media screen and (max-width: 412px){
+    .cards{
+        width: 70%;
+        height: auto;
+        overflow: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin-left: 15%;
+        max-height: 130vh;
+        margin-bottom: 5%;
+        /* background-color: blue; */
+
+    }
+    .cardsContainer{
+        position: relative;
+        width: 100%;
+        height: 71vh;
+        /* background-color: blue; */
+        overflow: auto;
+        align-items: left;
+        max-height:80vh;
+        margin-bottom: 35%;
+    }
+}
+

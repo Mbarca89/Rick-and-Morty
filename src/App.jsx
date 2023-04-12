@@ -5,6 +5,7 @@ import Cards from './components/Cards/Cards.jsx';
 import Detail from './components/Detail/Detail';
 import About from './components/About/About';
 import Form from './components/Form/Form'
+import Favorites from './components/Favorites/Favorites'
 import { useState, useEffect } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 
@@ -67,6 +68,7 @@ const logout = () =>{
          <Route path='/detail/:id' element={<Detail/>}/>
          <Route path='/about' element={<About/>}/>
          <Route path='/' element={<Form login={login}/>}/>
+         <Route path='/favorites' element={<Favorites/>}/>
          </Routes>
       </div>
    );

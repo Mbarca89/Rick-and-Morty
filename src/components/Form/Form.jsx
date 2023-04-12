@@ -25,8 +25,7 @@ function Form ({login}) {
             ...userData,
             [event.target.name]:event.target.value
         }) 
-        console.log(userData)      
-        
+                
         let val = Validations(userData,event.target.name)
 
         if(event.target.name === 'email'){
@@ -67,7 +66,7 @@ function Form ({login}) {
                 </div>
                 <button className={style.button} onClick={handleSubmit} >Submit</button>
             </form>
-            </div>
+        </div>
         </>
     )
 
