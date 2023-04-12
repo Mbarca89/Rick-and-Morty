@@ -50,8 +50,8 @@ function Form ({login}) {
 
     return (
         <>
-        <div >
-            <form >
+        
+            <form className={style.formContainer} >
                 <div className={style.emailContainer}>
                 <input className={style.bar} name='email' type="text" value={userData.email} onChange={onChangeHandler} required/>
                 <label className={style.label} htmlFor='email'>Email</label>
@@ -66,7 +66,7 @@ function Form ({login}) {
                 </div>
                 <button className={style.button} onClick={handleSubmit} >Submit</button>
             </form>
-        </div>
+        
         </>
     )
 

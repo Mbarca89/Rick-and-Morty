@@ -29,8 +29,8 @@ useEffect(() => {
                 <img className={style.img} src={character?.image} alt=''/>                
             </div>
 
-            <div>    
-                <h2 className={style.h2}>{character?.name}</h2>                 
+            <div className={style.h2Container}>    
+                <h2 className={style.h2}>Nombre: {character?.name}</h2>                 
                 <h2 className={style.h2}>Status: {character?.status}</h2>
                 <h2 className={style.h2}>Species: {character?.species}</h2>
                 <h2 className={style.h2}>Gender: {character?.gender}</h2>

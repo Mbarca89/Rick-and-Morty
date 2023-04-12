@@ -9,7 +9,7 @@
    margin-right: 0px;
    background-image: url(./img/Rick-And-Morty-bg.png) ,url(./img/back.png);
    background-attachment: fixed,scroll;
-   background-size: 90vw,50%;
+   background-size: 90vw,100vh;
    background-repeat: no-repeat;
    background-position: 32% 100%,center;
    overflow: hidden;
@@ -25,10 +25,9 @@
 @media screen and (max-width: 412px){
    .App {
       background-attachment: fixed;
-      background-size: 100vw;
+      background-size: 100vw,100vh;
       background-position: bottom,center;
       background-repeat: no-repeat;
       /* background-color: red; */
-   
    }
 }

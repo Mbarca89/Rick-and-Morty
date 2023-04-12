@@ -22,28 +22,30 @@
     
     
 }
+
+/* mobile */
 @media screen and (max-width: 412px){
-    .cards{
-        width: 70%;
-        height: auto;
-        overflow: auto;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        margin-left: 15%;
-        max-height: 130vh;
-        margin-bottom: 5%;
-        /* background-color: blue; */
+    .cardsContainer{
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    margin-top: 25%;
+    /* background-color: red; */
+    height: 70vh;
 
     }
-    .cardsContainer{
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 50%;
+        /* background-color: red; */
+        margin-top: 0%;
+        margin-left: 6%;
         position: relative;
-        width: 100%;
-        height: 71vh;
-        /* background-color: blue; */
-        overflow: auto;
-        align-items: left;
-        max-height:80vh;
-        margin-bottom: 35%;
+        border: 0;
     }
 }
 

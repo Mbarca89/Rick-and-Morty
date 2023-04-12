@@ -33,7 +33,7 @@ const logout = () =>{
 
    useEffect(() => {
       !access && navigate('/');
-   }, [access]);
+   }, [access,navigate]);
 
    const [characters,setCharacters] = useState([])
 

@@ -6,9 +6,9 @@ function Nav ({onSearch,logout}) {
     const loc = useLocation()
     return(        
         loc.pathname !== '/' && <>
-        <div className={style.navLarge}>
+        <div className={style.nav}>
         <SearchBar onSearch={onSearch} />
-        <div className={style.navBarLarge}>
+        <div className={style.navBar}>
         <button className={style.button}>
             <NavLink className={style.link} to='/home'>Home</NavLink>
         </button>

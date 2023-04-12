@@ -1,43 +1,53 @@
-.passContainer{
+.formContainer{
     display: flex;
-    position: relative;
     flex-direction: column;
-    width: 30vw;
-    height: 20vh;
-    /* background-color: red; */
-    margin-top: 1vh;
-    margin-left: auto;
+    position: relative;
+    width: 40vw;
+    height: 70vh;
+    top: 10vh;
     align-items: center;
+    /* background-color: red; */
 }
 
 .emailContainer{
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 30vw;
-    height: 20vh;
-    /* background-color: red; */
-    margin-top: 15vh;
-    margin-left: auto;
+    width: 90%;
+    height: 40%;
+    /* background-color: blue; */
+    margin-top: 1%;
+    align-items: center;
+}
+
+.passContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 90%;
+    height: 40%;
+    /* background-color: blue; */
+    margin-top: 5%;
     align-items: center;
 }
 
 .button{
     position: relative;
-    padding-left: 1vw;
-    padding-right: 4.2vw;
+    padding-left: auto;
+    padding-right: auto;
     border-radius: 10px;
     margin-top: 0vh;
-    width: 5vw;
-    height: 5vh;
+    width: 30%;
+    height: 10%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
-    font-size: 1vw;
+    font-size: 100%;
     background-color: #bbe2f3;
     border: none;
     box-shadow: 0 0 20px 5px #24536d;
     transition: .2s;
     text-align: center;
+    
 }
 .button:hover{
     box-shadow: 0 0 20px 10px #48abe0;
@@ -46,10 +56,10 @@
 .bar{
     position: relative;
     border-radius: 10px;
-    margin-top: 5vh;
-    margin-bottom: 0;
-    width: 20vw;
-    height: 4vh;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    width: 80%;
+    height: 20%;
     font-family: 'Courier New', Courier, monospace;
     background-color: #bbe2f3;
     border: none;
@@ -69,19 +79,19 @@
 }
 .label{
     position: relative;
-    bottom: 9vh;
-    margin-top: 0vh;
+    bottom: 35%;
+    margin-top: 0%;
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
-    font-size: 1.3vw;
+    font-size: 120%;
 }
 
 .validation{
     position: relative;
     margin-top: 0;
     margin-bottom: 0;
-    bottom: 2vh;
+    bottom: 10%;
     color: rgb(254, 100, 100);
     font-weight: bold;
     text-shadow: 1px 2px black;
@@ -94,4 +104,89 @@
 
 .passwordOk{
     color: green;
+}
+
+/* intermedio */
+@media screen and (max-width: 950px){
+    .formContainer{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 380px;
+        height: 70vh;
+        top: 10vh;
+        align-items: center;
+        /* background-color: red; */
+    }
+    
+}
+
+/* Mobile */
+@media screen and (max-width: 412px){
+    .formContainer{
+        
+        position: relative;
+        width: 90vw;
+        height: 65vh;
+        top: 15vh;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+   .emailContainer{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+        /* background-color: blue; */
+        margin-top: 0%;
+        margin-bottom: 0%;
+        top: 1%;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .passContainer{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+        /* background-color: blue; */
+        margin-left: auto;
+        top: 10%;
+        align-items: center;
+    }
+
+    .bar{
+        position: relative;
+        margin-top: 7%;
+        margin-bottom: 0;
+        width: 90%;
+        height: 30%;
+    }
+
+    .label{        
+        font-size: 100%;
+        margin-bottom: 0%;
+        bottom: 50%;
+    }
+
+    .button{
+        position: relative;
+        padding-left: 1vw;
+        padding-right: 4.2vw;
+        border-radius: 10px;
+        top: 17%;
+        width: 90%;
+        height: 10%;
+        font-size: 100%;
+    }
+    .validation{
+        font-size: 80%;
+        /* background-color: red; */
+    }
+    
+
 }

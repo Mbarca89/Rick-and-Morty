@@ -1,4 +1,4 @@
-.navLarge{
+.nav{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
     align-items: center;
     margin-bottom: 0%;
 }
-.navBarLarge{
+.navBar{
     width: 100%;
     height: 35%;
     display: flex;
@@ -50,32 +50,38 @@
     cursor: pointer;
 }
 
+/* intermedio */
 @media screen and (max-width: 950px){
-    .navLarge{
-        background-color: red;
+    .nav{
+        /* background-color: red; */
         width: 470px;
         position: fixed;
     }
     
 }
 
+/* mobile */
 @media screen and (max-width: 412px){
     .nav{
-        width: 68%;
+        width: 95vw;
+        height: 15vh;
         margin-top: .5vh;
-        
+        /* background-color: red; */
     }
 
     .navBar{
-        margin-top: 1vh;
-        column-gap: 2vw;
-        margin-right: 35vw;
+        margin-top: 3%;
+        column-gap: 4%;
+        align-items: center;
+        margin-left: 7%;
+        height: 55%;
     }
 
     .button{
-        width: 10vw;
-        padding-left: 2vw;
-        padding-right: 10vw;
+        width: 20%;
+        height: 50%;
+        padding-left: auto;
+        padding-right: auto;
         text-align: center;
     }
 

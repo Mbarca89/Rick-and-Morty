@@ -43,10 +43,11 @@
     cursor: pointer;
 }
 
+/* mobile */
 @media screen and (max-width: 412px){
     .search{
         margin-left: 6vw;
-        margin-top: 5%;
+        margin-top: 1%;
         display: flex;
         flex-direction: row;
         width: 100%;

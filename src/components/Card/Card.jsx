@@ -26,7 +26,7 @@ function Card({id,name,status,species,gender,origin,image,onClose,addFav,removeF
             setIsFav(true);
          }
       });
-   }, [myFavorites]);
+   }, [myFavorites,id]);
 
    return (
       <div key={id} className={style.card}>
@@ -37,7 +37,8 @@ function Card({id,name,status,species,gender,origin,image,onClose,addFav,removeF
          <img src={image} alt='' className={style.image}/>
             <NavLink className={style.link} to={`/detail/${id}`}><h2 className={style.name}>{name}</h2></NavLink>
          </div>         
-         <div className={style.elements}>                     
+         <div className={style.elements}>  
+            <h2 className={style.h2}>ID: {id}</h2>                   
             <h2 className={style.h2}>Status: {status}</h2>
             <h2 className={style.h2}>Species: {species}</h2>
             <h2 className={style.h2}>Gender: {gender}</h2>

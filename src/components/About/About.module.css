@@ -1,13 +1,13 @@
 .about{
     background-color: rgba(0, 0, 0, 20%);
     border-radius: 15px;
-    margin-top: 5%;
-    width: 40%;
+    margin-top: 25vh;
+    width: 40vw;
 }
 
 .h1{
     font-weight: 1000;
-    margin-top: -6vh;
+    margin-top: 0%;
     text-shadow: 1px 1px #bbe2f3;
 }
 
@@ -22,4 +22,41 @@
     position: relative;
     width: 60%;
     left: 2%;
+}
+
+@media screen and (max-width: 950px){
+    .about{
+        width: 380px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 412px){
+    .about{
+        background-color: rgba(0, 0, 0, 20%);
+        border-radius: 15px;
+        margin-top: 20vh;
+        width: 80vw;
+        height: 60vh;
+    }
+    
+    .h1{
+        font-weight: 1000;
+        margin-top: 0;
+        text-shadow: 1px 1px #bbe2f3;
+    }
+    
+    .p{
+        font-weight: bolder;
+        text-align: center;
+        color: #bbe2f3;
+        text-shadow: 1px 2px black;
+    }
+    
+    .img{
+        position: relative;
+        width: 60%;
+        left: 2%;
+    }
+
 }
