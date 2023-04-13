@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Validations from './validations'
 import style from '../Form/Form.module.css'
 
@@ -6,7 +6,8 @@ function Form ({login}) {
 
     const [userData, setUserData] = useState({
         email: '',
-        password: ''
+        password: '',
+        name: ''
     })
 
     const [errors, setErrors] = useState({
@@ -19,34 +20,39 @@ function Form ({login}) {
             password2:''
         }
     })
-
-    const onChangeHandler = (event) => {
-         setUserData({
-            ...userData,
-            [event.target.name]:event.target.value
-        }) 
-                
-        let val = Validations(userData,event.target.name)
-
-        if(event.target.name === 'email'){
-            setErrors({
-              ...errors,
-              [event.target.name]: val.email
-             })
-        }
-
-        if(event.target.name === 'password'){
-            setErrors({
-                ...errors,
-                password: val.password
-            })
-        }
-    }
     
     const handleSubmit = (event) =>{
         event.preventDefault()
         login(userData)
     }
+
+    const onChangeHandler = (event) => {
+         setUserData({
+            ...userData,
+            [event.target.name]:event.target.value,
+            name: event.target.name
+        }) 
+    }
+
+useEffect(() => {
+            
+    let val = Validations(userData,userData.name)
+
+    if(userData.name === 'email'){
+        setErrors({
+          ...errors,
+          [userData.name]: val.email
+         })
+    }
+
+    if(userData.name === 'password'){
+        setErrors({
+            ...errors,
+            password: val.password
+        })
+    }
+},[userData,errors])
+
 
     return (
         <>

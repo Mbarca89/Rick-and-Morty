@@ -1,4 +1,5 @@
 const Validations = (userData, eventName) => {
+    console.log('esto es lo que recibe la funcion validations')
     console.log(userData)
     let res = {
         email: {
@@ -30,7 +31,7 @@ const Validations = (userData, eventName) => {
     }
 
     if(eventName==='password'){
-        if(9 < userData.password.length || userData.password.length < 5 ){
+        if(10 < userData.password.length || userData.password.length < 6 ){
             res.password.password1 = 'La contraseña debe tener entre 6 y 10 caracteres'
             }
         else {
