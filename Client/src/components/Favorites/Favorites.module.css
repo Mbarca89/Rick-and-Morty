@@ -82,9 +82,9 @@
         overflow-y: auto;
         overflow-x: hidden;
         align-items: center;
-        margin-top: 37%;
+        margin-top: 1%;
         /* background-color: red; */
-        height: 70vh;
+        height: 60vh;
     
         }
         
@@ -100,7 +100,7 @@
             border: 0;
         }
         .filterContainer{
-            top: 20%;
+            top: 0%;
             width: 90vw;
             height: 8vh;
             /* background-color: red; */

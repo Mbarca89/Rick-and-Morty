@@ -65,7 +65,7 @@ useEffect(() => {
                 {errors.email.email2 && <p  className={style.validation}>{errors.email.email2}</p>}
                 </div>
                 <div className={style.passContainer}>
-                <input className={style.bar} name='password' type="text" value={userData.password} onChange={onChangeHandler} required/>
+                <input className={style.bar} name='password' type="password" value={userData.password} onChange={onChangeHandler} required/>
                 <label className={style.label} htmlFor='password'>Contraseña</label>
                 {errors.password.password1 && <p className={style.validation}>{errors.password.password1}</p>}
                 {errors.password.password2 && <p className={style.validation}>{errors.password.password2}</p>}

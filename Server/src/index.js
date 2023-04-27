@@ -1,33 +1,11 @@
 // const http = require('http')
 // const {getCharById} = require ('./controllers/getCharById')
-const express = require('express')
-const server = express()
+const app = require('./app')
 const PORT = 3001
-const routes = require('./routes/index')
 
-server.listen (PORT, () => {
+const server = app.listen (PORT, () => {
     console.log(`Server raised in port: ${PORT}`)
 })
-
-server.use(express.json())
-
-server.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Credentials', 'true');
-    res.header(
-       'Access-Control-Allow-Headers',
-       'Origin, X-Requested-With, Content-Type, Accept'
-    );
-    res.header(
-       'Access-Control-Allow-Methods',
-       'GET, POST, OPTIONS, PUT, DELETE'
-    );
-    next();
- });
- 
- server.use('/rickandmorty',routes)
- 
-
 // http.createServer((request,response) => {
 //     response.setHeader('Access-Control-Allow-Origin', '*')
 //     const url = request.url.split('/')
@@ -40,3 +18,5 @@ server.use((req, res, next) => {
 //     }
 // })
 // .listen(3001)
+
+module.exports = {server}
