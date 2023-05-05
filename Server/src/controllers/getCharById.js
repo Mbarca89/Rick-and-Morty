@@ -10,7 +10,7 @@ async function getCharById (req,res) {
             id: req.params.id,
             name: data.name,
             gender: data.gender,
-            species: data.especies,
+            species: data.species,
             origin: data.origin,
             image: data.image,
             status: data.status

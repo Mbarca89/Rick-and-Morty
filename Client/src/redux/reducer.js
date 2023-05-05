@@ -3,7 +3,7 @@ import {ADD_FAV,REMOVE_FAV,FILTER,ORDER} from './action-types.js'
 
 const initialState = {
     myFavorites: [],
-    filteredFavs: []
+    filteredFavs: [],
 }
 
 const reducer = (state = initialState, action) => {

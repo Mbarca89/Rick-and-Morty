@@ -2,9 +2,12 @@
 // const {getCharById} = require ('./controllers/getCharById')
 const app = require('./app')
 const PORT = 3001
+const { conn } = require('./DB_connection');
 
-const server = app.listen (PORT, () => {
+
+const server = app.listen  (PORT, async () => {
     console.log(`Server raised in port: ${PORT}`)
+    await conn.sync({force: false})
 })
 // http.createServer((request,response) => {
 //     response.setHeader('Access-Control-Allow-Origin', '*')

@@ -21,7 +21,7 @@ function Card({id,name,status,species,gender,origin,image,onClose,addFav,removeF
 
    useEffect(() => {
       myFavorites.forEach((fav) => {
-         if (fav.id === id) {
+         if (fav.id === Number(id)) {
             setIsFav(true);
          }
       });
